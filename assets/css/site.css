@@ -205,13 +205,13 @@ ul,ol{padding:0;list-style:none}
 .crumbs a:hover{color:var(--color-ink)}
 
 /* ============ ticker ============ */
-.ticker{position:relative;overflow:hidden;border-block:1px solid var(--color-rule-soft);padding-block:clamp(.8rem,1.6vw,1.2rem)}
-.ticker__track{display:flex;width:max-content;animation:tick 52s linear infinite}
+.ticker{position:relative;overflow:hidden;border-block:1px solid var(--color-rule-soft);padding-block:.55rem;background:oklch(12% 0.012 45 / .6)}
+.ticker__track{display:flex;width:max-content;animation:tick 38s linear infinite}
 .ticker:hover .ticker__track{animation-play-state:paused}
 .ticker__set{display:flex;align-items:center;flex:none}
-.ticker__item{display:flex;align-items:center;gap:clamp(.9rem,2vw,2rem);padding-right:clamp(.9rem,2vw,2rem);font-family:var(--font-display);font-weight:820;font-stretch:118%;text-transform:uppercase;font-size:clamp(1.3rem,.8rem + 2.2vw,3rem);line-height:1;letter-spacing:-.01em;white-space:nowrap}
+.ticker__item{display:flex;align-items:center;gap:1.4rem;padding-right:1.4rem;font-family:var(--font-display);font-weight:820;font-stretch:118%;text-transform:uppercase;font-size:clamp(.82rem,.7rem + .45vw,1.05rem);line-height:1;letter-spacing:.06em;white-space:nowrap}
 .ticker__item:nth-child(even) span{font-family:var(--font-serif);font-weight:400;font-stretch:normal;text-transform:none;color:var(--color-lager);font-size:1.12em;letter-spacing:0}
-.ticker__item svg{width:clamp(18px,2vw,30px);height:auto;color:var(--color-accent);flex:none}
+.ticker__item svg{width:11px;height:auto;color:var(--color-accent);flex:none}
 @keyframes tick{to{transform:translateX(-50%)}}
 
 /* ============ intro + product stage ============ */

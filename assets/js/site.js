@@ -479,7 +479,7 @@
   var starHost = $('[data-star]');
   function webgl() { try { var c = d.createElement('canvas'); return !!(W.WebGLRenderingContext && (c.getContext('webgl2') || c.getContext('webgl'))); } catch (e) { return false; } }
   if (starHost && webgl() && !(navigator.connection && navigator.connection.saveData)) {
-    var go = function () { import(new URL('star3d.js', SELF).href).then(function (m) { m.mount(starHost); }).catch(function () {}); };
+    var go = function () { import(new URL('star3d.js?v=20508244', SELF).href).then(function (m) { m.mount(starHost); }).catch(function () {}); };
     var idle = function () { ('requestIdleCallback' in W) ? requestIdleCallback(go, { timeout: 1500 }) : setTimeout(go, 300); };
     if (d.readyState === 'complete') idle(); else W.addEventListener('load', idle);
   }
