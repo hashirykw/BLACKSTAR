@@ -1,0 +1,97 @@
+/* Hallmark · genre: atmospheric · macrostructure: Photographic · theme: custom ("Railyard Neon")
+ * vibe: neon bronco, railway timber, lager gold, Montana night
+ * paper oklch(15% 0.012 45) · accent oklch(63% 0.215 27) neon red · second accent oklch(80% 0.135 78) lager gold
+ * display: Big Shoulders Display · body: Hanken Grotesk · mono: JetBrains Mono
+ * axes: dark / display-condensed / warm · nav: N5 floating pill · footer: Ft5 statement
+ * Blackstar Brewery & Restaurant — built by Nexlyr Solutions
+ */
+
+@font-face{font-family:"Big Shoulders Display";src:url("../fonts/display-900.woff2") format("woff2");font-weight:900;font-style:normal;font-display:swap}
+@font-face{font-family:"Big Shoulders Display";src:url("../fonts/display-800.woff2") format("woff2");font-weight:800;font-style:normal;font-display:swap}
+@font-face{font-family:"Big Shoulders Display";src:url("../fonts/display-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Hanken Grotesk";src:url("../fonts/sans-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Hanken Grotesk";src:url("../fonts/sans-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Hanken Grotesk";src:url("../fonts/sans-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"JetBrains Mono";src:url("../fonts/mono-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+
+/* metric-matched fallbacks so text never jumps when the webfonts land */
+@font-face{font-family:"Display Fallback";src:local("Arial Narrow"),local("Roboto Condensed"),local("Arial");size-adjust:82%;ascent-override:118%;descent-override:30%}
+@font-face{font-family:"Body Fallback";src:local("Arial"),local("Helvetica");size-adjust:100%;ascent-override:96%;descent-override:26%}
+
+:root{
+  color-scheme:dark;
+
+  /* paper — warm railyard black, never #000 */
+  --color-paper:   oklch(15% 0.012 45);
+  --color-paper-2: oklch(19% 0.013 45);
+  --color-paper-3: oklch(23% 0.014 45);
+  --color-paper-4: oklch(28% 0.014 45);
+  --color-rule:    oklch(33% 0.012 45);
+  --color-rule-soft: oklch(26% 0.012 45);
+
+  /* ink — cream, never #fff */
+  --color-ink:     oklch(94% 0.016 80);
+  --color-muted:   oklch(79% 0.014 72);
+  --color-neutral: oklch(64% 0.012 60);
+  --color-faint:   oklch(48% 0.012 50);
+
+  /* accents — neon bronco red (primary), lager gold (small surfaces only) */
+  --color-accent:    oklch(63% 0.215 27);
+  --color-accent-hi: oklch(69% 0.2 30);
+  --color-accent-lo: oklch(45% 0.16 27);
+  --color-on-accent: oklch(98% 0.008 80);
+  --color-lager:     oklch(80% 0.135 78);
+  --color-lager-lo:  oklch(60% 0.12 70);
+  --color-focus:     oklch(82% 0.14 80);
+
+  /* overlays (modifiers, not palette) */
+  --color-scrim:     oklch(12% 0.012 45 / .72);
+  --color-scrim-soft:oklch(12% 0.012 45 / .35);
+  --color-glass:     oklch(19% 0.013 45 / .78);
+  --color-line-glow: oklch(63% 0.215 27 / .45);
+
+  /* type */
+  --font-display: "Big Shoulders Display","Display Fallback",Impact,sans-serif;
+  --font-body:    "Hanken Grotesk","Body Fallback",system-ui,sans-serif;
+  --font-mono:    "JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+
+  --text-xs:  .75rem;
+  --text-sm:  .875rem;
+  --text-base:1.0625rem;
+  --text-lg:  1.25rem;
+  --text-xl:  clamp(1.35rem, 1.1rem + .9vw, 1.75rem);
+  --text-2xl: clamp(1.8rem, 1.3rem + 2vw, 2.75rem);
+  --text-3xl: clamp(2.4rem, 1.5rem + 3.6vw, 4.25rem);
+  --text-4xl: clamp(3rem, 1.6rem + 5.6vw, 6.25rem);
+  --text-display: clamp(3.4rem, 1.4rem + 8.4vw, 10rem);
+
+  /* 4pt spacing */
+  --space-3xs: .25rem;
+  --space-2xs: .5rem;
+  --space-xs:  .75rem;
+  --space-sm:  1rem;
+  --space-md:  1.5rem;
+  --space-lg:  2rem;
+  --space-xl:  3rem;
+  --space-2xl: 4.5rem;
+  --space-3xl: clamp(4.5rem, 3rem + 6vw, 8.5rem);
+  --gutter:    clamp(1.1rem, .6rem + 2.4vw, 3rem);
+  --maxw:      1360px;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-pill: 999px;
+
+  /* motion */
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in:     cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long:  420ms;
+  --dur-slow:  900ms;
+
+  --shadow-lift: 0 30px 60px -30px oklch(8% 0.01 45 / .9);
+  --nav-h: 76px;
+}
