@@ -1,3 +1,24 @@
 [
-  { "date": "2026-11-08", "macrostructure": "Photographic", "theme": "custom", "theme_axes": "dark / display-condensed / warm", "vibe": "neon bronco, railway timber, lager gold, Montana night", "enrichment": "WebGL nautical star (three.js) + photography", "nav": "N5", "footer": "Ft5", "brief": "Blackstar Brewery & Restaurant, Whitefish MT — premium demo site" }
+ {
+  "date": "2026-11-08",
+  "macrostructure": "Photographic",
+  "theme": "custom",
+  "theme_axes": "dark / grotesk-sans expanded / warm",
+  "vibe": "glass over warm blooms, railway industrial, neon bronco",
+  "enrichment": "WebGL star + background-removed product stages",
+  "nav": "N5 glass bar + mobile dock",
+  "footer": "Ft5",
+  "brief": "Blackstar v2 \u2014 sharper buttons, glass, mobile-first compaction"
+ },
+ {
+  "date": "2026-11-08",
+  "macrostructure": "Photographic",
+  "theme": "custom",
+  "theme_axes": "dark / display-condensed / warm",
+  "vibe": "neon bronco, railway timber, lager gold, Montana night",
+  "enrichment": "WebGL nautical star (three.js) + photography",
+  "nav": "N5",
+  "footer": "Ft5",
+  "brief": "Blackstar Brewery & Restaurant, Whitefish MT \u2014 premium demo site"
+ }
 ]

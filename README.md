@@ -23,10 +23,13 @@ assets/css/site.css     all styles
 assets/js/site.js       interactions: nav, dropdowns, open-now, reveals, tap board, lightbox, chat, forms
 assets/js/star3d.js     3D nautical star (three.js, lazy-loaded after the page is up)
 assets/js/vendor/       GSAP + ScrollTrigger, Lenis (local copies, no CDN)
-assets/fonts/           Big Shoulders Display, Hanken Grotesk, JetBrains Mono (woff2)
-assets/img/             photos from blackstarmt.com as responsive WebP (480–2400w)
+assets/fonts/           Archivo (expanded display), Instrument Serif (accents), Manrope (body), JetBrains Mono — subset woff2
+assets/img/             photos from blackstarmt.com as responsive WebP (480–2400w); cut-*.webp are background-removed product shots
 assets/brand/           vector logo, wordmark, star, bronco drawing, favicons, og-image
 ```
+
+## Mobile
+App-style layout under 960px: glass bottom dock (Home · Menu · Order · Events · Ask), compact menu sheet and chat panel (never full screen), swipe rows instead of long stacks, and one-category-at-a-time menu tabs.
 
 ## Editing
 - **Hours:** `HOURS` at the top of `assets/js/site.js` (drives the "Open now" pills and today's row) + the hours text in the pages.
