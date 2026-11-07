@@ -25,7 +25,8 @@ assets/js/star3d.js     3D nautical star (three.js, lazy-loaded after the page i
 assets/js/vendor/       GSAP + ScrollTrigger, Lenis (local copies, no CDN)
 assets/fonts/           Archivo (expanded display), Instrument Serif (accents), Manrope (body), JetBrains Mono — subset woff2
 assets/img/             photos from blackstarmt.com as responsive WebP (480–2400w); cut-*.webp are background-removed product shots
-assets/brand/           vector logo, wordmark, star, bronco drawing, favicons, og-image
+assets/brand/           vector logo, wordmark, star, bronco drawing, favicons
+assets/og/              1200×630 link-preview images, one per page (home, menu, brewery, events, story, visit)
 ```
 
 ## Mobile
